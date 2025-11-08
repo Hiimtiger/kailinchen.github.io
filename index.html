@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex; /* side-by-side layout */
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      width: 220px;
+      background-color: #1e1e2f;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+      position: fixed; /* stays in place when scrolling */
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+    }
+
+    .sidebar a:hover {
+      background-color: #33334d;
+      border-radius: 5px;
+      padding-left: 10px;
+    }
+
+    /* Main content area */
+    .content {
+      margin-left: 240px; /* same as sidebar width + padding */
+      padding: 20px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>My Site</h2>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="content">
+    <h1>Welcome!</h1>
+    <p>This is the main content area of your site.</p>
+    <h2 id="about">About</h2>
+    <p>Write something about yourself here.</p>
+    <h2 id="projects">Projects</h2>
+    <p>List or link to your projects here.</p>
+    <h2 id="contact">Contact</h2>
+    <p>Put your contact info or a form here.</p>
+  </div>
+
+</body>
+</html>
